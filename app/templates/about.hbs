@@ -1,6 +1,4 @@
-{{outlet}}
-{{#each model ad |bookmark}}
-<article od={{bookmark.id}}>
-  {{bookmark.title}}
-</article>
+
+{{#each model as |bookmark|}}
+{{bookmark-listing bookmark=bookmark}}
 {{/each}}
