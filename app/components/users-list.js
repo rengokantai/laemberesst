@@ -1,5 +1,12 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
+const UserListComponent = Ember.Component.extend({
   imgClass:"avatar"
 });
+
+
+UserListComponent.reopenClass({
+  positionParams:['avatarUrl','email']
+})
+
+export default UserListComponent;
