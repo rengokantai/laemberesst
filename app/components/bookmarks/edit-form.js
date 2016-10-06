@@ -13,6 +13,10 @@ bookmark.save().then((value)=>{
 )
 
   },
-    cancel(){}
+    cancel(){},
+    delete(bookmark){
+      bookmark.destroyRecord();
+      this.get('router').transitionTo('bookmarks');
+    }
   }
 });

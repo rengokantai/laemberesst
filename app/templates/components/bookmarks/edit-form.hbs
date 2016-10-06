@@ -6,6 +6,7 @@
   {{input type="hidden" name="user_id" value=bookmark.user_id}}
   <input type="submit" value="save"/>
   <button {{action 'cancel'}} id='cancel'>cancel</button>
+  {{#unless bookmark.isNew}} <button id="delete" {{action "delete" bookmark}}>delete</button>{{/unless}}
 </form>
 
 
