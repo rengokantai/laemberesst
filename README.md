@@ -46,3 +46,8 @@ create 404
 ```
 ember g route page-not-found --path /*wildcard
 ```
+###5. Ember.js Models
+####2 Trans
+```
+ember g model user username:string email:string firstName:string lastName:string avatar:string isAdmin:boolean created:date
+```
