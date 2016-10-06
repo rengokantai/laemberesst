@@ -63,3 +63,11 @@ query
 ```
 return this.get('store').query('user',{isAdmin:false});
 ```
+
+###6 Ember.js Temp
+###7 Ember.js Comp
+####1 Exp
+[demo site](http://indexiatech.github.io/ember-components)
+```
+ember g component users-list
+```
