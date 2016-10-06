@@ -1,0 +1,12 @@
+<form {{action "save" bookmark on="submit"}}>
+  <p><label for="">link:{{input name="link" value=bookmark.link}}</label></p>
+  <p><label for="">title:{{input name="title" value=bookmark.title}}</label></p>
+  <p><label for="">about:{{input name="about" value=bookmark.about}}</label></p>
+  <p><label for="">public:{{input type="checkbox" name="public" value=bookmark.public}}</label></p>
+  {{input type="hidden" name="user_id" value=bookmark.user_id}}
+  <input type="submit" value="save"/>
+  <button {{action 'cancel'}} id='cancel'>cancel</button>
+</form>
+
+
+{{yield}}
