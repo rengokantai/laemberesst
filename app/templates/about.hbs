@@ -1,4 +1,9 @@
 
 {{#each model as |bookmark|}}
+{{#link-to 'bookmarks.edit' bookmark}}Edit bookmark{{/link-to}}
+{{#if bookmark.public}}
 {{bookmark-listing bookmark=bookmark}}
+{{else}}
+No public bookmark
+{{/if}}
 {{/each}}
