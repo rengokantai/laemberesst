@@ -51,3 +51,15 @@ ember g route page-not-found --path /*wildcard
 ```
 ember g model user username:string email:string firstName:string lastName:string avatar:string isAdmin:boolean created:date
 ```
+####3 Find a record
+```
+return this.get('store').findRecord('bookmark',1);
+```
+####4 Filter for multiple record
+```
+ember g route users/list-active
+```
+query
+```
+return this.get('store').query('user',{isAdmin:false});
+```
