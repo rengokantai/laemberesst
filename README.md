@@ -40,7 +40,7 @@ ember g route bookmarks/index
 we can direct visit index by omitting it
 ####3 Dynamic routes
 ```
-ember g route bookmark/edit --path /edit/:bookmark_id
+ember g route bookmarks/edit --path /edit/:bookmark_id
 ```
 create 404
 ```
