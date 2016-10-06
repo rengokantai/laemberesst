@@ -1,8 +1,8 @@
 ##laemberjsesst
-####Ember.js component
+####5 Ember.js component
 name must contain dash
 
-####Ember.js helper
+####6 Ember.js helper
 ```
 ember g helper bookmark-title
 ```
@@ -10,4 +10,39 @@ the param must be in bracket.
 ```
 //export function bookmarkTitle(title,about/*, hash*/) {   incorrect.
 export function bookmarkTitle([title,about]/*, hash*/) {
+```
+####7 Ember.js and the server
+```
+ember install ember-cli-mirage
+```
+then create a folder called `mirage` under project root,and create model
+```
+ember g mirage-model user
+```
+then
+```
+ember g mirage-factory user
+```
+
+###4. Ember.js Routes
+####1 Explore
+```
+ember g route bookmarks
+```
+####2 Createa nested
+```
+ember g route bookmarks/new
+```
+index route = no route suffix.
+```
+ember g route bookmarks/index
+```
+we can direct visit index by omitting it
+####3 Dynamic routes
+```
+ember g route bookmark/edit --path /edit/:bookmark_id
+```
+create 404
+```
+ember g route page-not-found --path /*wildcard
 ```
