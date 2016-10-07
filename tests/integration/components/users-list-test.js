@@ -11,7 +11,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{users-list}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$('img').attr('class'), 'avatar');
 
   // Template block usage:
   this.render(hbs`
@@ -20,5 +20,5 @@ test('it renders', function(assert) {
     {{/users-list}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('img').attr('class'), 'avatar');
 });
