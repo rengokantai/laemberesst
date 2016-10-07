@@ -71,3 +71,25 @@ return this.get('store').query('user',{isAdmin:false});
 ```
 ember g component users-list
 ```
+###9 Application Configuration
+####1 Configure an Ember.js 
+uncomment
+line 23-line 27
+then we can import using
+```
+import ENV from 'laemberjsesst/config/environment'
+```
+
+####2 Build an app
+deploy using surge.sh
+```
+ember build (--environment=development)
+```
+npm install -g surge
+```
+then
+```
+cd dist
+cp index.html 200.html
+surge
+```
