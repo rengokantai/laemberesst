@@ -108,3 +108,4 @@ ember test --server
 ```
 ember g acceptance-test bookmark-delete
 ```
+###3 Model tests
